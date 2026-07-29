@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Main dark theme for Settings Activity -->
+    <style name="Theme.Webscreensaverandroid" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#6366F1</item>
+        <item name="colorPrimaryVariant">#4F46E5</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSurface">#12131C</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="android:windowBackground">#090A0F</item>
+        <item name="android:statusBarColor">#090A0F</item>
+        <item name="android:navigationBarColor">#090A0F</item>
+        <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+    </style>
+</resources>

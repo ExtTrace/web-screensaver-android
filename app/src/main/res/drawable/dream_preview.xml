@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="200dp"
+    android:viewportWidth="320"
+    android:viewportHeight="200">
+
+    <!-- Dark Background -->
+    <path
+        android:fillColor="#090A0F"
+        android:pathData="M0,0h320v200h-320z" />
+
+    <!-- Subtle Grid Glow Accent -->
+    <path
+        android:fillColor="#12131C"
+        android:pathData="M16,16h288v168h-288z" />
+
+    <!-- Screen Border Frame -->
+    <path
+        android:strokeColor="#25273C"
+        android:strokeWidth="1.5"
+        android:pathData="M16,16h288v168h-288z" />
+
+    <!-- Clock Time Digits Representation: 10 : 08 -->
+    <!-- Digit '1' -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M65,70h12v50h-12z" />
+
+    <!-- Digit '0' -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M88,70h26v50h-26z M99,81h4v28h-4z" />
+
+    <!-- Colon ':' -->
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M125,82h8v8h-8z M125,100h8v8h-8z" />
+
+    <!-- Digit '0' -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M144,70h26v50h-26z M155,81h4v28h-4z" />
+
+    <!-- Colon ':' -->
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M181,82h8v8h-8z M181,100h8v8h-8z" />
+
+    <!-- Digit '8' -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M200,70h26v50h-26z M210,79h6v10h-6z M210,99h6v11h-6z" />
+
+    <!-- Date Line Bar -->
+    <path
+        android:fillColor="#4F46E5"
+        android:pathData="M90,135h140v4h-140z" />
+</vector>

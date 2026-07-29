@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Clock Screensaver</string>
+    <string name="settings_header_title">Web Screensaver</string>
+    <string name="settings_header_subtitle">Display your custom web clock as a fullscreen Android screensaver while charging or docked.</string>
+    <string name="section_config">Configuration</string>
+    <string name="label_url">Target URL</string>
+    <string name="hint_url">https://exttrace.github.io/?mode=android</string>
+    <string name="hint_mode_tip">Tip: Append ?mode=android to your URL to hide the domain label and optimize layout for mobile screensaver.</string>
+    <string name="btn_save">Save Settings</string>
+    <string name="btn_preview">Preview in Browser</string>
+    <string name="btn_open_system_settings">Open Android Screensaver Settings</string>
+    <string name="saved_message">URL saved successfully!</string>
+    <string name="invalid_url_message">Please enter a valid web URL (e.g. https://...)</string>
+</resources>
