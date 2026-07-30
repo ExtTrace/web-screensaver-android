@@ -17,7 +17,7 @@ class ClockDreamService : DreamService() {
     companion object {
         const val PREFS_NAME = "screensaver_prefs"
         const val PREF_URL = "screensaver_url"
-        const val DEFAULT_URL = "https://exttrace.github.io/?mode=android"
+        const val DEFAULT_URL = "https://clock.dirgafeb.my.id?mode=android"
     }
 
     private var webView: WebView? = null
@@ -32,7 +32,7 @@ class ClockDreamService : DreamService() {
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
 
-        // Allow user touch interaction (e.g. tap to change clock format)
+        // Allow user touch interaction
         isInteractive = true
 
         // Run in full screen, hide navigation bar and status bar
@@ -43,6 +43,9 @@ class ClockDreamService : DreamService() {
 
         // Setup WebView to render the clock page
         webView = WebView(this).apply {
+            // Offload graphics rendering 100% to hardware GPU layer to minimize CPU power & heat
+            setLayerType(View.LAYER_TYPE_HARDWARE, null)
+
             settings.apply {
                 javaScriptEnabled = true
                 domStorageEnabled = true
@@ -53,6 +56,8 @@ class ClockDreamService : DreamService() {
                 setSupportZoom(false)
                 builtInZoomControls = false
                 displayZoomControls = false
+                @Suppress("DEPRECATION")
+                setRenderPriority(WebSettings.RenderPriority.HIGH)
             }
 
             // Bind JavaScript bridge to allow exiting screensaver via web UI
